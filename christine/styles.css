@@ -104,24 +104,8 @@ nav, footer {
   .main {
       flex-direction: column;
   }
-
-    .recipe-image {
-        order: 2; /* Adjust the order value as needed */
-    }
-    .ingredients {
-        order: 3;
-    }
-    .rating-box {
-        order: 6;
-    }
-    .recipe-info {
-        order: 1;
-    }
-    .method {
-        order: 4;
-    }
-    .tips {
-        order: 5;
-    }
+  .recipe-image, .recipe-info, .ingredients, .method, .rating-box, .tips {
+    width: 100%;
+  }
 
 }
