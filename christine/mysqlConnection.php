@@ -6,8 +6,8 @@ if(!$connection)
 
 $query = "SELECT * FROM users";
 $stmt = mysqli_query($connection, $query);
-while($row = mysqli_fetch_array($stmt)){
-    echo $row['Username'] . "<br>";
+while($row = mysqli_fetch_assoc($stmt)){
+    echo $row['Username'] . " " . $row['Email'] .  "<br>";
 }
 
 ?>
